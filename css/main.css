@@ -71,29 +71,29 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .toggle-nav {
+    display: inline-block;
+    z-index: 2;
+  }
   .navigation {
+    display: none;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    height: 100%;
     width: 85%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     top: 0;
   }
-  .navigation .toggle-nav {
-    display: inline-block;
-  }
   .navigation li {
     display: block;
     padding: 10px 10px 10px 10px;
     text-align: start;
   }
-  .navigation ul {
-    display: none;
-  }
-  .navigation ul.active {
+  .navigation.active {
     display: block;
   }
 }

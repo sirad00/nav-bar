@@ -6,7 +6,7 @@ $("a").click(function(){
   $(document).ready(function() {
     $('.toggle-nav').click(function(e) {
       $(this).toggleClass('active');
-      $('.navigation ul').toggleClass('active');
+      $('.navigation').toggleClass('active');
   
       e.preventDefault();
     });

@@ -64,24 +64,24 @@ body {
 }
 
 @media screen and (max-width: 800px) {
+  .toggle-nav {
+    display: inline-block;
+    z-index: 2;
+  }
   .navigation {
+    display: none;
     flex-direction: column;
+    height: 100%;
     width: 85%;
     justify-content: center;
     top: 0;
-    .toggle-nav {
-      display: inline-block;
-
-    }
+    
     li {
       display: block;
       padding: 10px 10px 10px 10px;
       text-align: start;
     }
-    ul {
-      display: none;
-    }
-    ul.active {
+    &.active {
       display: block;
     }
   }
